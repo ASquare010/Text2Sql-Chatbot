@@ -1,0 +1,83 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot UI</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="{{ url_for('static', filename='js/jQuery.js') }}"></script>
+</head>
+<body>
+    
+    <div class="chatbot-header">
+        <h1>Welcome To AreA!</h1>
+    </div>
+
+    <div class="container">
+        <div class="Ai-container">
+            
+            <div class="avatar"><img id="avatar" src="{{ url_for('static', filename='assets/marea.png') }}" height="450px"></div>
+
+            
+            <div class="thinking">
+                <button  id="micBtn" onclick="toggleRecording()" class="mic-button">
+                    <img src="{{ url_for('static', filename='assets/mic.png') }}" height="40px">
+                </button>
+                <div  class="image-container">
+                    <img id="playAnim" src="{{ url_for('static', filename='assets/dot.gif') }}" height="130px" hidden="true">
+                    <img id="stopAnim" src="{{ url_for('static', filename='assets/aiIdel.png') }}" height="130px">
+                    <img id="playLoading" src="{{ url_for('static', filename='assets/loading.gif') }}" height="130px" hidden="true">
+                </div>
+            </div>
+            
+
+        </div>
+
+        <div class="chatbot-container">
+            <div class="chatbot-content">
+                <div id="chatbot-messages" class="chatbot-messages">
+                    <div class="message bot-message">
+                        <p><span class="timestamp">2.03 PM, 15 Nov</span> Hello and welcome! 🌟 Explore our services for a seamless experience. How can we assist you today?</p>
+                    </div>
+                    <div class="horizontal-list-view">
+                        <div class="card">
+                            <img src="{{ url_for('static', filename='assets/house.png') }}" alt="Image" class="card-image">
+                            <div class="card-info">
+                                <div class="card-header">
+                                    <p class="card-price">$9,000,000</p>
+                                    <span class="card-featured">Featured</span>
+                                </div>
+                                <p class="card-address">Oka street</p>
+
+                                <div class="card-details">
+                                    <p>3 Beds </p>
+                                    <p>&bull; 2 Baths</p>
+                                    <p> &bull; 92SqFt</p>
+                                </div>
+                                <div class="card-agent">
+                                    <img src="{{ url_for('static', filename='assets/marea.png') }}" alt="Agent" class="agent-image">
+                                    <p class="agent-name">Jane Smith</p>
+                                    <p class="listing-age">6 months ago</p>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <div class="chatbot-footer">
+        <input id="messageInput" type="text" placeholder="Type Here...">
+        <button class="send-button"  onclick="sendText()">
+          <img src="{{ url_for('static', filename='assets/send.png') }}" height="20px">
+        </button>
+    </div>
+
+    <audio id="audioPlayer" controls hidden></audio>
+    
+    <script src="{{ url_for('static', filename='js/vocie.js') }}"></script> 
+
+</body>
+</html>
