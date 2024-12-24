@@ -63,7 +63,7 @@ function updatePropertyCards(properties) {
       properties.forEach(property => {
           const cardHtml = `
               <div class="card">
-                  <img src="/static/assets/house.png" alt="Image" class="card-image">
+                  <img src="${property.PhotoURLPrefix}${property.PhotoKey}/photo_1.jpg" alt="Image" class="card-image">
                   <div class="card-info">
                       <div class="card-header">
                           <span class="card-featured" hidden="true">Featured</span>

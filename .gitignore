@@ -125,7 +125,6 @@ celerybeat.pid
 .env
 .venv
 env/
-data/
 venv/
 ENV/
 env.bak/
@@ -155,8 +154,3 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
-data/test_sqldb.db
-
-*.db
-
-data/
