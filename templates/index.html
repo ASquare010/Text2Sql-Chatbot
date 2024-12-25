@@ -9,13 +9,13 @@
 </head>
 <body>
     
-    <div class="chatbot-header">
-        <h1>Welcome To AreA!</h1>
-    </div>
-
     <div class="container">
         <div class="Ai-container">
-            
+
+            <div class="chatbot-header">
+                <h1>Chat with Database!</h1>
+            </div>
+
             <div class="avatar"><img id="avatar" src="{{ url_for('static', filename='assets/marea.png') }}" height="450px"></div>
 
             
@@ -29,8 +29,14 @@
                     <img id="playLoading" src="{{ url_for('static', filename='assets/loading.gif') }}" height="130px" hidden="true">
                 </div>
             </div>
-            
 
+            <div class="chatbot-footer">
+                <input id="messageInput" type="text" placeholder="Type Here...">
+                <button class="send-button"  onclick="sendText()">
+                  <img src="{{ url_for('static', filename='assets/send.png') }}" height="20px">
+                </button>
+            </div>
+            
         </div>
 
         <div class="chatbot-container">
@@ -44,13 +50,6 @@
                 </div>
             </div>
         </div> 
-    </div>
-
-    <div class="chatbot-footer">
-        <input id="messageInput" type="text" placeholder="Type Here...">
-        <button class="send-button"  onclick="sendText()">
-          <img src="{{ url_for('static', filename='assets/send.png') }}" height="20px">
-        </button>
     </div>
 
     <audio id="audioPlayer" controls hidden></audio>
