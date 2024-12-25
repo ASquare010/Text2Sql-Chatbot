@@ -21,9 +21,11 @@ This project is a multi-agent workflow system leveraging OpenAI's GPT models to 
 
 2. Set up a virtual environment (optional):
    ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   python -m venv .venv
+   source .venv/bin/activate
    ```
+   - On Windows: `.venv\Scripts\activate`
+   - On macOS/Linux: `source .venv/bin/activate`
 
 3. Install dependencies:
    ```bash
