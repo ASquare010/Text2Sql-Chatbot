@@ -9,6 +9,11 @@ This project is a multi-agent workflow system leveraging OpenAI's GPT models to 
 - **Custom Memory Management**: Each agent maintains its own conversation memory.
 - **OpenAI Integration**: Powered by OpenAI's GPT models.
 
+## Ui
+
+![Alt text](assets/1.png)
+![Alt text](assets/2.png)
+
 ## Setup
 
 ### Prerequisites
