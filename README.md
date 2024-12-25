@@ -145,27 +145,6 @@ Displays the default home page. This endpoint is accessible via a web browser.
 - Use Postman or cURL to validate and debug responses.
 - Ensure the required dependencies and files (`utils`, `data`, etc.) are correctly set up.
 
-## Usage
-- **Text-to-SQL Agent**:
-  Send natural language queries to the `/text-to-sql` endpoint.
-- **Real Estate Agent**:
-  Query property details, listings, or analysis via `/real-estate`.
-
-## Contributing
-1. Fork the repository.
-2. Create a new feature branch:
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m "Add your message here"
-   ```
-4. Push to your branch:
-   ```bash
-   git push origin feature/your-feature-name
-   ```
-5. Create a pull request.
 
 ## Contact
 For questions or feedback, reach out to **A_Square**.
