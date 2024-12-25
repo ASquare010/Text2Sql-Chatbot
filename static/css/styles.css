@@ -43,7 +43,7 @@ body {
 }
 
 .chatbot-content {
-  margin-bottom: 80px;
+  margin-bottom: 2%;
   padding: 20px;
   display: flex;
   flex-direction: column;
